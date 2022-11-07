@@ -1,0 +1,87 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Minecraftia', sans-serif;
+  }
+  
+* {
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.left_choice {
+  float: left;
+  position : relative;
+  width: 50%;
+  height: 100%;
+  background-color: #000;
+  padding: 0px;
+}
+
+img {
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
+
+.right_choice {
+    float: right;
+    position : relative;
+    width: 50%;
+    height: 100%;
+    background-color: #000;
+    padding: 0px;
+}
+
+.center_text {
+  border-radius: 20px;
+  background-color: rgba(0,0,0, 0.4);
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+.left_choice:hover, .right_choice:hover{
+  cursor: pointer;
+}
+
+.left_choice:hover + .right_choice img {
+  opacity: 0.5;
+}
+
+.right_choice:hover + .left_choice img {
+  opacity: 0.5;
+}
+
+.info{
+  width: 100%;
+  opacity: 0;
+  position: absolute;
+  z-index: 9999;
+  top: 80%;
+  display: flex;
+  justify-content: center;
+}
+
+.info > span {
+  filter: blur(0);
+}
+
+.left_choice:hover .info{
+  opacity: 1;
+}
+
+.right_choice:hover .info{
+  opacity: 1;
+}

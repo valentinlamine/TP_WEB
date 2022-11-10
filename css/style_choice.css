@@ -1,3 +1,4 @@
+/* Pour ordinateur */
 @font-face {
   font-family: 'Minecraftia';
   src: url('MinecraftiaRegular.ttf') format('truetype');
@@ -55,8 +56,8 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
-  width: 80%;
-  padding: 20px;
+  width: auto;
+  padding: 30px;
   text-align: center;
 }
 
@@ -81,6 +82,7 @@ img:hover {
   left: 50%;
   display: flex;
   justify-content: center;
+  text-align: center;
   border-radius: 10px;
   background-color: rgba(0,0,0, 0.4);
   color: white;
@@ -100,4 +102,44 @@ img:hover {
 
 .right_choice:hover .info{
   opacity: 1;
+}
+
+/* Pour mobile */
+@media screen and (max-width: 600px) {
+  .left_choice, .right_choice {
+    width: 100%;
+    height: 50%;
+  }
+  
+  .left_choice {
+    float: none;
+  }
+  
+  .right_choice {
+    float: none;
+  }
+  
+  .center_text {
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: smaller;
+  }
+  
+  .info {
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    text-align: center;
+    font-size: smaller;
+  }
+
+  #info_bottom_mobile {
+    top:80%;
+  }
 }

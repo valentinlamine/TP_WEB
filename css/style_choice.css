@@ -57,7 +57,8 @@ img {
   transform: translate(-50%, -50%);
   z-index: 2;
   width: auto;
-  padding: 30px;
+  padding: 0px 20px;
+  padding-bottom: 20px;
   text-align: center;
 }
 
@@ -125,9 +126,9 @@ img:hover {
     left: 50%;
     padding-top: 0px;
     padding-bottom: 0px;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    font-size: smaller;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      font-size: smaller;
   }
   
   .info {

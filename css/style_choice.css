@@ -1,7 +1,7 @@
 /* Pour ordinateur */
 @font-face {
   font-family: 'Minecraftia';
-  src: url('MinecraftiaRegular.ttf') format('truetype');
+  src: url('../police/MinecraftiaRegular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   }

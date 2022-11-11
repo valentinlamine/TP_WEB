@@ -1,7 +1,7 @@
 /* Pour ordinateur */
 @font-face {
   font-family: 'Minecraftia';
-  src: url('MinecraftiaRegular.ttf') format('truetype');
+  src: url('../police/MinecraftiaRegular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   }
@@ -18,7 +18,7 @@ body, html {
   }
   
   .bg-image {
-    background-image: url("background.jpg");
+    background-image: url("../image/background.jpg");
     filter: blur(5px);
     -webkit-filter: blur(5px);
     height: 100%;

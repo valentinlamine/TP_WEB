@@ -105,8 +105,43 @@ img:hover {
   opacity: 1;
 }
 
+#replace_left {
+  visibility: hidden;
+}
+
+#replace_left:after {
+  visibility: visible;
+  content: "la gauche";
+}
+
+#replace_right {
+  visibility: hidden;
+}
+
+#replace_right:after {
+  visibility: visible;
+  content: "la droite";
+}
+
 /* Pour mobile */
 @media screen and (max-width: 600px) {
+  #replace_left {
+    visibility: hidden;
+
+  }
+
+  #replace_left:after {
+    visibility: visible;
+    content: "le haut";
+  }
+  #replace_right {
+    visibility: hidden;
+  }
+  
+  #replace_right:after {
+    visibility: visible;
+    content: "le bas";
+  }
   .left_choice, .right_choice {
     width: 100%;
     height: 50%;

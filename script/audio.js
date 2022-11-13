@@ -11,3 +11,14 @@ function PlaySound() {
         sound.pause();
     }
 }
+
+function PlaySoundStart() {
+    var sound = document.getElementById('sound2');
+    sound.volume = 0.25;
+    if (sound.paused) {
+        sound.play();
+    }
+    else {
+        sound.pause();
+    }
+}
